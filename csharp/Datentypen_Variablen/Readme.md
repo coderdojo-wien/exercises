@@ -1,8 +1,8 @@
-# Datentypen und Variablen
+﻿# Datentypen und Variablen
 
 ## Datentypen
 
-In C# gibt es mehrere Datentypen. Der ganze Überblick welche Datentypen in C# erhalten sind kann du [hier](https://msdn.microsoft.com/de-de/library/cs7y5x0x(v=vs.90).aspx)sehen. Ein Datentyp entscheidet welche Werte darf eine Variable annehmen. Wir werden hier erwähnen nur die wichtigsten.
+In C# gibt es mehrere Datentypen. Einen Überblick welche Datentypen in C# erhalten sind kann du [hier](https://docs.microsoft.com/de-de/dotnet/articles/csharp/language-reference/keywords/reference-tables-for-types) sehen. Ein Datentyp bestimmt welche Werte eine Variable annehmen darf. Hier die wichtigsten der sogenannten integrierten Typen.
 
 |Schlüsselwort|Wertebereich||
 |---|---|---|---|
@@ -17,7 +17,7 @@ In C# gibt es mehrere Datentypen. Der ganze Überblick welche Datentypen in C# e
 
 Variablen definieren ein Bereich in Computerspeicher. In einer Variable können beliebige Werte gespeichert und später von dort ausgelesen werden.
 
-Eine Variable hat immer ein Datentyp, eine Name und einem Wert.
+Eine Variable hat immer ein Datentyp, einen Namen und einen Wert.
 
 ```csharp
 string meineName = "Toni";
@@ -41,17 +41,17 @@ string begruessung = "Hallo ";
 string meineName = "Toni";
 string nachricht = begruessung + meineName;
 ```
-Welche Wert is nach dem letzen Befehlt in eine Variable ```nachricht``` ?
+Welche Wert ist nach dem letzten Befehlt in eine Variable ```nachricht``` ?
 
 ```csharp
 int ersteZahl = 5;
 int zweiteZahl = 5;
 int ergebnis = ersteZahl + zweiteZahl;
 ```
-Welche Wert is nach dem letzen Befehlt in eine Variable ```ergebnis``` ?
+Welche Wert ist nach dem letzten Befehlt in eine Variable ```ergebnis``` ?
 
 ## Aufgabe
 
-Schreibe ein Programm der dich mit deinem Vornamen, Nachnamen und Alter begrüßt. Jede Werte sollte in eine eigene Variable gespeichert werden.
+Schreibe ein Programm der dich mit deinem Vornamen, Nachnamen und Alter begrüßt. Jede Wert sollte in eine eigene Variable gespeichert werden.
 
-Ein Ergebniss kann zum Beispiel so aussehen: _Hallo Toni Kalcik, 39_.
+Ein Ergebnis kann zum Beispiel so aussehen: _Hallo Toni Kalcik, 39_.
