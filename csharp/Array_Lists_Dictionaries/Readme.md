@@ -55,9 +55,9 @@ Schreibe in einer Variable die Namen deiner drei besten Freunden oder Freundinne
 
 ## List
 
-List zeigen einige Ähnlichkeiten mit Array an. Auch in List kann man eine Menge in eine Variable zusammenfassen. Es gibt jedoch einige Unterschiede. Der wohl wesentlichste Unterschied ist das ein List dynamisch und ein Array statisch ist. Was bedeutet es? Wir haben bei Arrays gelernt, dass man immer angeben muss wie groß das Array ist, also wir viel Werte wir in einem Array speichern wollen. Bei List muss man es nicht, wir können dort beliebig viele Werte speichern.
+List zeigt einige Ähnlichkeiten mit Array. Auch in List kann man eine Menge von Variablen zusammenfassen. Es gibt jedoch einige Unterschiede. Der wohl wesentlichste Unterschied ist, dass List dynamisch und ein Array statisch ist. Was bedeutet das? Bei Array haben wir gelernt, dass man immer angeben muss wie groß das Array ist, also wir viele Werte wir in einem Array speichern wollen. Bei List muss man das nicht vorab angeben. Wir können beliebig viele Werte speichern.
 
-Eine Variable von Typ ```List``` legt man folglich an:
+Eine Variable von Typ ```List``` legt man so an:
 
 ```csharp
 List<int> alterMeinerFreunde = new List<int>();
@@ -75,36 +75,37 @@ alterMeinerFreunde.Add(9);
 alterMeinerFreunde.Add(10);
 ```
 
-Siehst du? Du kann mit die Funktion ```Add``` Werte hinzufügen. Aber nicht nur das, du kannst wieder auch Werte entfernen:
+Siehst du? Du kannst mit der Funktion ```Add``` Werte hinzufügen. Aber nicht nur das, du kannst die Werte auch wieder entfernen:
 
 ```csharp
 alterMeinerFreunde.Remove(9);
 ```
 
-Es gibt viel Funktionen du auf einer List ausführen kannst hier paar Beispiele:
+Es gibt viele Funktionen du auf einer List ausführen kannst, hier paar Beispiele:
 
 ```csharp
-int anzahl = alterMeinerFreunde.Count; //Gibt zurück wie viel Einträge sind in die Liste
-alterMeinerFreunde.Sort(); //Ordnet die Liste an
-alterMeinerFreunde.Clear(); //Löscht alle Einträge aus die Liste
-bool gibtEsEinAlterZehn = alterMeinerFreunde.Contains(10); //Gibt zurück in die Variable gibtEsEinAlterZehn ob ein Eintrag 10 existiert
+int anzahl = alterMeinerFreunde.Count; // Gibt zurück wie viel Einträge sind in die Liste
+alterMeinerFreunde.Sort(); // Ordnet die Liste an
+alterMeinerFreunde.Clear(); // Löscht alle Einträge aus die Liste
+bool gibtEsEinAlterZehn = alterMeinerFreunde.Contains(10); // Gibt zurück in die Variable gibtEsEinAlterZehn ob ein Eintrag 10 existiert
 ```
 
-Wenn du einen Wert auslesen möchtest kannst es so machen wie bei Array:
+Wenn du einen Wert auslesen möchtest, kannst das so machen wie bei Array:
 
 ```csharp 
 int meinesFreundAlter = alterMeinerFreunde[0];
 ```
 
-Es gibt auch andere und bessere Varianten wie man Werte auslesen kann. aber da würden wir zu weit vorgreifen.
+Es gibt auch andere und bessere Varianten um Werte auszulesen. Dazu aber ein anderes mal mehr.
 
-### Ausgabe
+### Aufgabe
 
-Schreibe in einer Variable Namen von drei besten Freunden oder Freundinnen. Sortiere diese von A bis Z. Gebe jede diesen Namen in einer _Console_ aus in dem du die vorher angelegte Variable verwendest.
+Schreibe in einer Variable Namen von drei deiner besten Freunde oder Freundinnen. Sortiere diese von A bis Z. Gib jede dieser Namen in einer _Console_ aus, in dem du die vorher angelegte Variable verwendest.
+
 
 ## Dictionaries
 
-Du hast gesehen, dass wir in vorherigen Beispielen zwar das Alter aber nicht die Namen dazu gespeichert haben. Dazu geeignet sich ```Dictionary```. Dictionary ist eine spezielle Liste, wo man auf eine Position zwei Werte speichern kann ein Wert bei _key_ andere bei _value_.
+Du hast gesehen, dass wir in vorherigen Beispielen zwar das Alter aber nicht die Namen dazu gespeichert haben. Dazu geeignet sich ```Dictionary```. Dictionary ist eine spezielle Liste, mit welcher man an einer Position zwei Werte speichern kann, eine Wert als _Key_ und einen weiteren als _Value_.
 
 ```csharp
 Dictionary<string,int> altersBuch = new Dictionary<string,int>();
