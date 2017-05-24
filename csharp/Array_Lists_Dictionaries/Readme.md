@@ -119,15 +119,14 @@ Wichtig ist hier zu sagen dass das _key_ eindeutig sein muss. Das hier wird hier
 Dictionary<string,int> altersBuch = new Dictionary<string,int>();
 altersBuch.Add("Toni", 39);
 altersBuch.Add("Daniel", 38);
-altersBuch.Add("Toni", 25); //hier wird bei ausführen des Programm eine Fehler passieren, weil schon Toni hinzugefügt haben.
+altersBuch.Add("Toni", 25); // Beim Ausführen des Programm wird hier ein Fehler auftreten, weil wir Toni schon hinzugefügt haben.
 ```
 
-Wenn du einen Wert aus Dictionary auslesen möchtest kannst du es folglich machen:
+Wenn du einen Wert aus einem Dictionary auslesen möchtest kannst du dies so machen:
 ```csharp
 var alterVonDaniel = altersBuch["Daniel"];
 ```
 
 ### Aufgabe
 
-Schreibe in einer Variable Vorname, Nachname und das Alter von drei besten Freunden oder Freundinnen. Gebe das Alter von einen diesen Namen in einer _Console_ aus in dem du die vorher angelegte Variable verwendest.
-
+Schreibe in einer Variable Vorname, Nachname und das Alter von drei deiner besten Freunden oder Freundinnen. Gib das Alter zu einem der Namen in einer _Console_ aus in dem du die vorher angelegte Variable verwendest.
