@@ -2,7 +2,7 @@
 
 ## Datentypen
 
-In C# gibt es mehrere Datentypen. Der ganze Überblick welche Datentypen in C# erhalten sind kannst du [hier](https://msdn.microsoft.com/de-de/library/cs7y5x0x(v=vs.90).aspx)sehen. Ein Datentyp entscheidet welche Werte darf eine Variable annehmen. Wir werden hier erwähnen nur die wichtigsten.
+In C# gibt es mehrere Datentypen. Einen Überblick welche Datentypen in C# erhalten sind kann du [hier](https://docs.microsoft.com/de-de/dotnet/articles/csharp/language-reference/keywords/reference-tables-for-types) sehen. Ein Datentyp bestimmt welche Werte eine Variable annehmen darf. Hier die wichtigsten der sogenannten integrierten Typen.
 
 |Schlüsselwort|Wertebereich||
 |---|---|---|---|
