@@ -4,14 +4,14 @@
 
 In C# gibt es mehrere Datentypen. Einen Überblick welche Datentypen in C# erhalten sind kann du [hier](https://docs.microsoft.com/de-de/dotnet/articles/csharp/language-reference/keywords/reference-tables-for-types) sehen. Ein Datentyp bestimmt welche Werte eine Variable annehmen darf. Hier die wichtigsten der sogenannten integrierten Typen.
 
-|Schlüsselwort|Wertebereich||
-|---|---|---|---|
-|```bool```|```true``` oder ```false```||
-|```byte```|0..255||
-|```decimal```|-79228162514264337593543950335 .. 79228162514264337593543950335||
+|Schlüsselwort|Wertebereich|
+|:---:|---|
+|```bool```|```true``` oder ```false```|
+|```byte```|0..255|
+|```decimal```|-79228162514264337593543950335 .. 79228162514264337593543950335|
 |```char```|Ein Zeichen|
-|```int```|-2,147,483,648 .. 2,147,483,647||
-|```string```|Eine Zeichenkette||
+|```int```|-2,147,483,648 .. 2,147,483,647|
+|```string```|Eine Zeichenkette|
 
 ## Variablen
 
