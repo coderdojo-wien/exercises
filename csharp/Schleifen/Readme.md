@@ -3,9 +3,9 @@ Um ein bestimmtes Codesegment zu wiederholen, verwendet man Schleifen. Von Schle
 
 ## For
 
-Eine ```For``` Schleife ist sogenannte Zählschleife und besteht aus drei Befehlen. Der erste Befehl bestimmt das Wert und Typ von _Index_. Der zweite Parameter ist eine Abbruchbestimmung. Er steuert wann die Schleife abgebrochen werden soll. Der dritte Befehlt sagt welche Operation sollte nach jedem Vorgang ausgeführt werden.
+Eine ```for``` Schleife ist sogenannte Zählschleife und besteht aus drei Befehlen. Der erste Befehl bestimmt das Wert und ein Typ von _Index_. Der zweite Parameter ist eine Abbruchbestimmung. Er steuert wann die Schleife abgebrochen werden soll. Der dritte Befehlt sagt welche Operation sollte nach jedem Vorgang ausgeführt werden.
 
-Sehen wir uns an wie so eine Schleife aussieht:
+Sehen wir uns wie so eine Schleife aussieht an :
 
 ```csharp
 for (int i = 0; i < 4; i = i + 1)
@@ -24,7 +24,7 @@ Eine Frage: Welche Werte werden nach Ausführung in _Console_ angezeigt?
  2) Gib die alle Namen in umgekehrte Reihenfolge aus. 
 ## While
 
-Eine ```While``` Schleife ist eine sogenannte Kopfgesteuerte Schleife. Kopf gesteuert deswegen, weil sich die Steuerung der Schleife oben befindet.
+Eine ```while``` Schleife ist eine sogenannte Kopfgesteuerte Schleife. Kopf gesteuert deswegen, weil sich die Steuerung der Schleife oben befindet.
 
 ```csharp
 int anzahlVonZeichen = 0;
@@ -35,7 +35,7 @@ while (anzahlVonZeichen < 10)
 }
 ```
 
-Im unterschied zu ```For``` Schleife hat die ```While``` Schleife nur ein Befehl. Diese sagt wie lange soll das Codesegment ausgeführt werden. In den obigen Beispiel lautet das Abbruch- oder besser gesagt Laufbedienung ```anzahlVonZeichen < 10```. Also wird das Befehl ``` Console.WriteLine ``` solange ausgeführt bis das ```anzahlVonZeichen``` kleiner zehn ist. Vielleicht fragst du dich was das Befehlt ```anzahlVonZeichen++``` bedeutet. Es ist eine Abkürkzung von einer Schreibweisse ```anzahlVonZeichen = anzahlVonZeichen + 1```.
+Im unterschied zu ```for```, hat die ```while``` Schleife nur ein Befehl. Diese sagt wie lange soll das Codesegment ausgeführt werden. In den obigen Beispiel lautet das Abbruchbedienung ```anzahlVonZeichen < 10```. Also wird das Befehl ``` Console.WriteLine ``` solange ausgeführt bis das ```anzahlVonZeichen``` kleiner zehn ist. Vielleicht fragst du dich was das Befehlt ```anzahlVonZeichen++``` bedeutet. Es ist eine Abkürkzung von einer Schreibweisse ```anzahlVonZeichen = anzahlVonZeichen + 1```.
 
 Eine Frage: Wieviel _X_ Zeichen werden auf dem Bildschirm in den obigen Beispiel tatsächlich ausgegeben? 
 
@@ -57,7 +57,7 @@ static void Main(string[] args)
 
     int i = 0;
 
-    //schreibe hier das Codesegment um das Alphabet auszugeben mit hilfe eine While Schleife
+    //schreibe hier das Codesegment um das Alphabet auszugeben mit hilfe eine while Schleife
 
     Console.WriteLine();
 }
@@ -65,8 +65,56 @@ static void Main(string[] args)
 ```
 
 Das Programm könnte so aussehen
-![Alphabet mit While Schleife](images/alphabet_with_while.gif)
+![Alphabet mit eine while Schleife](images/alphabet_with_while.gif)
 
-## Do-While
+Es gibt auch eine Fußgesteuerte Variante einer ```while``` Schleife. Die siete so aus:
+
+```csharp
+int anzahlVonZeichen = 0;
+do
+{
+    Console.Write("X");
+    anzahlVonZeichen++;
+}
+while (anzahlVonZeichen < 10)
+```
+In diesen Fall wird die Schleife immer mindestens einmal ausgeführt weil die Abbruchbedienung erst am ende, also beim Fuß der Schleife überprüft wird.
+
+## Foreach
+
+Eine ```foreach``` Schleife ist eine Mengenschleife, weil sie immer auf alle Elemente einer Menge ausgeführt wird.
+
+```csharp
+List<string> freundenNamen = new List<string>
+                                {
+                                    "Toni",
+                                    "Daniel",
+                                    "Peter"
+                                };
+
+foreach (string name in freundenNamen)
+{
+    Console.WriteLine(name);
+}
+```
+Hier werden alle daten die in ```freundenNamen``` Liste gespeichert sind, ausgegeben. Man hätte es auch mit eine ```for``` Schleifen machen können aber das wäre aufwändiger.
+
+```csharp
+List<string> freundenNamen = new List<string>
+                                {
+                                    "Toni",
+                                    "Daniel",
+                                    "Peter"
+                                };
+
+for (int i = 0; i < freundenNamen.Count; i++)
+{
+    Console.WriteLine(freundenNamen[i]);
+}
+```
+
+Eine ```foreach``` Schleife kann man jedoch nicht auf alle Datentypen verwenden.
 
 ### Aufgabe
+
+Schreibe in einer Variable ```List<string> freunde``` die Namen fünf Freunde oder Freundinnen. Gib nacheinander alle Namen in _Console_ aus, indem du die ```foreach``` Schleife verwendest.
