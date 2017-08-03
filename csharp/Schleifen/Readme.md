@@ -1,7 +1,7 @@
 ﻿# Schleifen
 Um ein bestimmtes Codesegment zu wiederholen, verwendet man Schleifen. Von Schleifen gibt es mehrere Arten. 
 
-## For
+## ```for```
 
 Eine ```for``` Schleife ist sogenannte Zählschleife und besteht aus drei Befehlen. Der erste Befehl bestimmt das Wert und ein Typ von _Index_. Der zweite Parameter ist eine Abbruchbestimmung. Er steuert wann die Schleife abgebrochen werden soll. Der dritte Befehlt sagt welche Operation sollte nach jedem Vorgang ausgeführt werden.
 
@@ -80,7 +80,7 @@ while (anzahlVonZeichen < 10)
 ```
 In diesen Fall wird die Schleife immer mindestens einmal ausgeführt weil die Abbruchbedienung erst am ende, also beim Fuß der Schleife überprüft wird.
 
-## Foreach
+## ```foreach```
 
 Eine ```foreach``` Schleife ist eine Mengenschleife, weil sie immer auf alle Elemente einer Menge ausgeführt wird.
 
