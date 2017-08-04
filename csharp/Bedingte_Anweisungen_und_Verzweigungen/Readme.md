@@ -82,7 +82,7 @@ static void Main(string[] args)
 }
 ```
 
-Der selber code kann auch mit ```if else``` geschrieben werden:
+Der selber code kann man auch mit  ```if else``` schreiben:
 
 ```csharp
 static void Main(string[] args)
@@ -113,7 +113,7 @@ static void Main(string[] args)
 }
 ```
 
-Ein ```switch``` besteht aus eine oder mehrere ```case``` Bezeichnungen und einem nicht verplfichtenden ```default``` Bezeichnung. Jeder ```case``` Übeprüft ob eine Bedienung erfüllt war, falls ja, dann wird das Ablauf mit ```break``` Befehl abgrebrochen, andersfall wird das Ablauf zum nächstes ```case``` übergehen. Fallst kein ```case``` erfüllt war, wird das Code im ```default``` ausgeführt.
+Ein ```switch``` besteht aus einen oder mehreren ```case```(s) und einem _nicht_ verpflichtenden ```default``` Bezeichnung. Jeder ```case``` Übeprüft ob eine Bedienung erfüllt ist, falls ja, dann wird das Code in ```case``` ausgeführt und dann das Ablauf mit ```break``` Befehl abgrebrochen, andersfall wird es zum nächstes ```case``` übergehen. Fallst kein ```case``` erfüllt ist, wird das Code im ```default``` ausgeführt.
 
 ```csharp
 
@@ -125,3 +125,13 @@ switch(VARIABLE)
 
 ```
 ### Aufgabe
+Schreibe ein Rechner mit hilfe von ```switch case```. Der Rechner sollt Addition, Substraktion und Multiplikation und Division können.
+
+Hier kannst du sehen wie das Programm aussehen kann.
+
+![Rechner](images/rechner.gif)
+
+Falls du eine Zeichenkette also ```string``` zum Zahl, zum Beispiel ```int``` umwandeln möchtest, muss du das Zahl _parsen_:
+```csharp
+int einZahl = int.Parse(Console.ReadLine());
+```
