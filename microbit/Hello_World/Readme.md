@@ -56,7 +56,7 @@ Ist das nicht der Fall, ist der Simulator nicht ausgeführt. Der Simulator kanns
 
 4. Nach dem _flash_ Vorgang sollte das Ergebnis auf dem micro:bit erscheinen.
 
-![](images/Result_on_microbit.gif)
+![](images/Result_On_microbit.gif)
 
 
 
