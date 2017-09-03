@@ -52,7 +52,7 @@ Ist das nicht der Fall, ist der Simulator nicht ausgeführt. Der Simulator kanns
 
 3. Wenn du dem Code (ein hex Datei) auf micro:bit speicherst, beginnt ein _flash_ vorgang ein, also das Programm wird in micro:bit Speicher übertragen.
 
-![](images/flashing.gif)
+![](images/Flashing.gif)
 
 4. Nach dem _flash_ Vorgang sollte das Ergebnis auf dem micro:bit erscheinen.
 
