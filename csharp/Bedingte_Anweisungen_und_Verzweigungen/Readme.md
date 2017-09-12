@@ -4,34 +4,34 @@ Bedingte Anweisungen können ein Programm auf unterschiedliche Zustände und Ein
 
 ## ```if else```
 
-Durch eine Bediengte Anweisung wird entschieden ob ein bestimmtes Codesegment ausgeführt wird oder nicht. In _C#_ ist diese mit einem ```if``` Befehl realisiert.
+Durch eine bedingte Anweisung wird entschieden ob ein bestimmtes Codesegment ausgeführt wird oder nicht. In _C#_ gibt es dafür Befehl ```if```.
 
 ```csharp
 int zahl = 5;
 
-if(zahl > 0) 
+if (zahl > 0) 
 {
-    Console.WriteLine("Zahl " + zahl +" ist eine positive Zahl.");
+    Console.WriteLine("Zahl " + zahl + " ist eine positive Zahl.");
 }
 ```
 
-Eine Verzweigung besteht aus zwei Codeabschnitten: ```if``` und optionalen ```else```.
+Eine Verzweigung besteht aus zwei Codezweigen, dem ```if``` Zweig und dem ptionalen ```else``` Zweig.
 
 ```csharp
 int zahl = -1;
 
-if(zahl > 0) 
+if (zahl > 0) 
 {
-    Console.WriteLine("Zahl " + zahl +" ist eine positive Zahl.");
+    Console.WriteLine("Zahl " + zahl + " ist eine positive Zahl.");
 }
 else
 {
-    Console.WriteLine("Zahl " + zahl +" ist eine negative Zahl.");
+    Console.WriteLine("Zahl " + zahl + " ist eine negative Zahl.");
 }
  ```
 ### Aufgabe
 
-In dem letzten Beispiel besteht ein Problem. Was wenn das Zahl ein 0 wird? Denn 0 is weder eine positive noch eine negative Zahl. Bessere das Fehler im folgenden Programm so aus, das bei Zahl 0 eine Nachricht herausgeben wird, dass das Zahl 0 weder negativ noch positiv ist.
+Im letzten Beispiel gibt es noch ein Problem. Was passiert, falls die Zahl ein 0 ist? 0 ist weder eine positive noch eine negative Zahl. Bessere den Fehler im folgenden Programm so aus, dass bei Eingabe der Zahl 0 eine Nachricht ausgeben wird, dass die Zahl 0 weder negativ noch positiv ist.
 
 ```csharp
 static void Main(string[] args)
@@ -41,13 +41,13 @@ static void Main(string[] args)
         Console.Write("Schreibe eine Zahl: ");
         int zahl = int.Parse(Console.ReadLine());
 
-        if(zahl > 0) 
+        if (zahl > 0) 
         {
-            Console.WriteLine("Zahl " + zahl +" ist eine positive Zahl.");
+            Console.WriteLine("Zahl " + zahl + " ist eine positive Zahl.");
         }
         else
         {
-            Console.WriteLine("Zahl " + zahl +" ist eine negative Zahl.");
+            Console.WriteLine("Zahl " + zahl + " ist eine negative Zahl.");
         }
 
         Console.WriteLine();
@@ -57,8 +57,8 @@ static void Main(string[] args)
 Ein Hinweis: Du kannst das ```else``` auch mit ```if``` kombinieren wie hier unten mit  _Pseudocode_ gezeigt wird.
 
 ```csharp
-if (Bedienung){}
-else if (Bedienung){}
+if (Bedingung){}
+else if (Bedingung){}
 else {}
 ```
 
@@ -71,18 +71,32 @@ static void Main(string[] args)
     Console.Write("Druecke eine Buchstabe am Tastatur. Es sind nur a,b,c oder d erlaubt:  ");
     string buchstabe = Console.ReadLine();
     
-    switch(buchstabe) 
+    switch (buchstabe) 
     {
-        case "a": Console.WriteLine("Du hast 'a' gedrueckt."); break;
-        case "b": Console.WriteLine("Du hast 'b' gedrueckt."); break;
-        case "c": Console.WriteLine("Du hast 'c' gedrueckt."); break;
-        case "d": Console.WriteLine("Du hast 'd' gedrueckt."); break;
-        default: Console.WriteLine("Ups du hast eine nicht erlaubte Tast gedrueckt!"); break;
+        case "a":
+            Console.WriteLine("Du hast 'a' gedrueckt.");
+            break;
+
+        case "b":
+            Console.WriteLine("Du hast 'b' gedrueckt.");
+            break;
+
+        case "c":
+            Console.WriteLine("Du hast 'c' gedrueckt.");
+            break;
+
+        case "d":
+            Console.WriteLine("Du hast 'd' gedrueckt.");
+            break;
+
+        default:
+            Console.WriteLine("Ups du hast eine nicht erlaubte Tast gedrueckt!");
+            break;
     }
 }
 ```
 
-Der selber code kann man auch mit  ```if else``` schreiben:
+Der selber Code kann man auch mit  ```if else``` schreiben:
 
 ```csharp
 static void Main(string[] args)
@@ -113,25 +127,30 @@ static void Main(string[] args)
 }
 ```
 
-Ein ```switch``` besteht aus einen oder mehreren ```case```(s) und einem _nicht_ verpflichtenden ```default``` Bezeichnung. Jeder ```case``` Übeprüft ob eine Bedienung erfüllt ist, falls ja, dann wird das Code in ```case``` ausgeführt und dann das Ablauf mit ```break``` Befehl abgrebrochen, andersfall wird es zum nächstes ```case``` übergehen. Fallst kein ```case``` erfüllt ist, wird das Code im ```default``` ausgeführt.
+Ein ```switch``` besteht aus einem oder mehreren ```case```(s) und einem _nicht_ verpflichtenden ```default``` Bezeichnung. Jeder ```case``` übeprüft ob eine Bedingung erfüllt ist. Falls ja, dann wird der Codeteil in ```case``` ausgeführt und dann das ```switch```  mit dem ```break``` Befehl verlassen. Gibt man kein ```break```an, wird der nächste ```case``` geprüft. Falls kein ```case``` erfüllt ist, wird der Codeteil im ```default``` ausgeführt.
 
 ```csharp
 
-switch(VARIABLE) 
+switch (VARIABLE)
 {
-    case ÜBERPRÜFUNG: CODE ZU AUSZUFÜHREN; break;
-    default: CODE ZU AUSZUFÜHREN; break;
+    case ÜBERPRÜFUNG:
+        // Auszuführender Code
+        break;
+
+    default:
+        // Auszuführender Code
+        break;
 }
 
 ```
 ### Aufgabe
-Schreibe ein Rechner mit hilfe von ```switch case```. Der Rechner sollt Addition, Substraktion und Multiplikation und Division können.
+Schreibe einen Rechner mit Hilfe von ```switch case```. Der Rechner sollt Addition, Substraktion sowie Multiplikation und Division beherrschen.
 
 Hier kannst du sehen wie das Programm aussehen kann.
 
 ![Rechner](images/rechner.gif)
 
-Falls du eine Zeichenkette also ```string``` zum Zahl, zum Beispiel ```int``` umwandeln möchtest, muss du das Zahl _parsen_:
+Falls du eine Zeichenkette also ```string``` in eine Zahl, zum Beispiel ```int``` umwandeln möchtest, muss du die Zahl _parsen_:
 ```csharp
 int einZahl = int.Parse(Console.ReadLine());
 ```
