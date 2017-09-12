@@ -57,7 +57,7 @@ do
     Console.Write("X");
     anzahlVonZeichen++;
 }
-while (anzahlVonZeichen < 10)
+while (anzahlVonZeichen < 10);
 ```
 In diesen Fall wird die Schleife immer mindestens einmal ausgeführt weil die Abbruchbedienung erst am ende, also beim Fuß der Schleife überprüft wird.
 
