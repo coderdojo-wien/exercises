@@ -99,7 +99,7 @@ public class Freund
     }
 }
 ```
-Um diese Klasse zu verwenden, müssen wir diese Klasse instanzieren. Das machen wir mit den _Operator_ ```new```.
+Um diese Klasse zu verwenden, müssen wir diese Klasse instanziieren. Das machen wir mit den _Operator_ ```new```.
 
 ```csharp
 public class Program
