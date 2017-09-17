@@ -1,6 +1,6 @@
 # Klassen
 
-Stellt dir folgende Aufgabe vor. Du musst ein Programm schreiben wo du bestimmte Informationen über deine Freunde speichern könntest und zwar: 
+Stellt dir folgende Aufgabe vor. Du willst ein Adressbuch-Programm schreiben, mit welchem du Informationen über deine Freunde speichern kannst und zwar: 
 
 * Name
 * Geschlecht
@@ -10,26 +10,27 @@ Stellt dir folgende Aufgabe vor. Du musst ein Programm schreiben wo du bestimmte
 
 ## Klassen
 
-Eine Klasse beschreibt ein Objekt, in diesen Fall eben einen konkreten Freund oder eine Freundin.
+Eine Klasse beschreibt ein Objekt, in diesen Fall eben einen bestimmten Freund oder eine Freundin.
 
-Ein Klasse fängt immer mit einen Wort das sagt wo die Klasse überall sichtbar ist. Wir werden wegen einfachkeit immer das Wort ```public``` verwenden. Weiterhin follgt das Schlüsselwort ```class```.
+Ein Klasse fängt immer mit einen Wort das sagt wo die Klasse überall sichtbar ist. Wir werden für's erste immer das Schlüsselwort ```public``` verwenden. Danach folgt das Schlüsselwort ```class```, womit wir dem Compiler sagen, dass wir nun eine Klasse definieren wollen.
 
 ```csharp
 public class Freund {}
 ```
 
 ### Konstruktor
-Eine Klasse kann auch einen oder mehreren expliziten Konstruktor(en) haben. Ein Konstruktor ist eine _Hilfsmethode_ die immer, wenn von eine Klasse ein konkretes Objekt erzeugt wird, aufgerufen wird. Ein Konstruktor muss immer die Name einer Klasse tragen und kann aber muss nicht ein oder mehrere Parametern haben. 
+Eine Klasse kann auch einen oder mehreren expliziten Konstruktor(en) haben. Ein Konstruktor ist eine spezielle Methode welche genau dann aufgerufen wird, wenn ein konkretes Objekt einer Klasse erzeugt wird. In C# hat ein Konstruktor immer den Namen seiner Klasse und kann beliebige Parameter haben. Kontruktoren haben aber niemals einen Rückgabewert. 
 
 ```csharp
 public class Freund 
 {
-    public Freund(){} // Ein Konstruktor ohne Parametern
+    public Freund(){} // Ein Konstruktor ohne Parameter
     public Freund(string name) {} // Ein Konstruktor mit einem Parameter
 }
 ```
+
 ### Klassenvariablen
-Klassenvariablen sind Variablen die am meisten innerhalb einer Klasse verwendet werden. Deswegen werden wir die mit dem Sichbarkeitswort ```private``` versehen oder wir können das Wort ```private``` als ganzes weglassen. Was in C# nicht als ```public``` bezeichnet wird, ist automatisch ```private``` also sichtbar nur innerhalb der Klasse selbst.
+Klassenvariablen sind Variablen die man innerhalb einer Klasse verwenden kann. Deshalb werden wir diese mit dem Schlüsselwort ```private``` versehen. Um eine Variable auch von ausserhalb der Klasse sichtbar zu machen können wir wieder das Schlüsselwort ```public``` verwenden.
 
 ```csharp
 public class Freund 
@@ -39,7 +40,7 @@ public class Freund
 ```
 
 ### Eigenschaften
-Wir haben also eine Klasse erzeugt, aber da fehlen noch die Eigenschaften die den Freund beschreiben. Eigenschaften werden in C# _Properties_ genannt. Eine _Property_ fängt genauso mit einen Wort mit dem die Sichtbarkeit angegeben wird. Weiterhin müssen wir ein Datentyp definieren, damit begrenzen wir welche Werte hier gespeichert werden können. Am ende kommt letzlich das Name mit den wir das _Property_ ansprechen und die Schlüsselwörter ```get``` und ```set```.
+Wir haben also eine Klasse erzeugt, aber es fehlen uns noch die Eigenschaften, welche deinen Freund beschreiben. Eigenschaften werden in C# _Properties_ genannt. Eine _Property_ fängt genauso mit einen Wort mit dem die Sichtbarkeit angegeben wird. Außerdem müssen wir natürlich den Datentyp angeben, damit begrenzen wir welche Werte die Eigenschaft annehmen kann. Zu letzt kommt der Name mit den wir das _Property_ ansprechen und die Schlüsselwörter ```get``` und ```set```.
 
 ```csharp
 public class Freund 
@@ -49,9 +50,9 @@ public class Freund
 ```
 
 ### Methoden
-Klassen können auch Methoden haben, mit oder ohne Rückgabeparametern.
+Klassen können auch Methoden haben, mit oder ohne Rückgabewert. Ein Rückgabewert kann als ein Ergebnis der Methode betrachtet werden.
 
-Eine Methode ohne Rückgabeparameter ist folgend deklariert. Ein Sichtbarkeitswort folgt das Schlüsselwort ```void```. Innerhalb die geschwomennen Klammern, schreib man dann das, was die Methode machen sollte.
+Eine Methode ohne Rückgabewert ist folgend deklariert. Ein Sichtbarkeitswort gefolgt vom Schlüsselwort ```void```. Innerhalb der geschwungene Klammern, schreibt man dann das, was die Methode machen sollte.
 
 ```csharp
 public class Freund 
@@ -63,9 +64,9 @@ public class Freund
 }
 ```
 
-Eine Methode kann, wie auch Konstruktor, mehrere Eingabeparametern haben.
+Eine Methode kann, wie auch bereits ein Konstruktor, mehrere Eingabeparametern haben.
 
-Eine Methode mit Rückgabeparameter muss anstatt das Wort ```void``` ein Rückgabetyp deklarieren. Methode mit Rückgabeparameter muss immer etwas zurückgeben und zwar mit dem Schlüsserwort ```return```.
+Hat eine Methode einen Rückgabewert, so gibt man dessen Datentyp anstatt des Schlüsselwort ```void``` an. Es muss immer ein Rückgabewert geliefert werden. Innerhalb der Methode gibt man diesem mit dem Schlüsserwort ```return``` an. Wird ```return``` ausgeführt beendet das gleichzeitig die Methode.
 
 ```csharp
 public class Freund 
@@ -77,9 +78,9 @@ public class Freund
 }
 ```
 
-Wir habe hier einige Klassenkonzepte erläutert. Jetz sehen wir uns an wie man eine Klasse verwenden kann.
+Du hast jetzt einige Grundinformationen zu Klassen bekommen. Sehen wir uns jetzt gemeinsam an, wie man Klassen verwenden kann.
 
-Wir deklarieren folgende Klasse ```Freund```:
+Zuerst deklarieren wir die Klasse ```Freund```:
 
 ```csharp
 public class Freund 
@@ -98,7 +99,7 @@ public class Freund
     }
 }
 ```
-Um diese Klasse zu verwende, müssen wir diese Klasse instatieren. Das machen wir mit den _Operator_ ```new```.
+Um diese Klasse zu verwenden, müssen wir diese Klasse instanziieren. Das machen wir mit den _Operator_ ```new```.
 
 ```csharp
 public class Program
@@ -117,12 +118,12 @@ public class Program
 
     static void Main(string[] args)
     {
-        Freund neueFreund = new Freund();
+        Freund meinFreund = new Freund();
     }
 }
 ```
 
-Ab jetzt können wir mit die Variable ```neueFreund``` arbeiten. Zum Beispiel ein _Name_ und ein _Alter_ zu den ```neueFreund``` zuweisen.
+Ab jetzt können wir mit die Variable ```meinFreund``` verwenden. Wir können zum Beispiel den Eigenschaften _Name_ und _Alter_ der Instanz ```meinFreund``` einen Wert zuweisen.
 
 ```csharp
 class Program
@@ -145,13 +146,13 @@ class Program
 
     static void Main(string[] args)
     {
-        Freund neueFreund = new Freund("Peter");
-        neueFreund.Alter = 8;
+        Freund meinFreund = new Freund("Peter");
+        meinFreund.Alter = 8;
     }
 }
 ```
 
-Und jetzt lassen wir den ```neueFreund``` sich vorstellen und wir sagen ihm ebensfalls Hallo.
+Lassen wir uns doch von unserem Freund begrüßen, dessen Informationen in der Instanz ```meinFreund``` gespeichert sind und lass uns den Gruß erwidern.
 
 ```csharp
 class Program
@@ -174,11 +175,11 @@ class Program
 
     static void Main(string[] args)
     {
-        Freund neueFreund = new Freund("Peter");
-        neueFreund.Alter = 8;
+        Freund meinFreund = new Freund("Peter");
+        meinFreund.Alter = 8;
 
-        neueFreund.SagHallo();
-        Console.WriteLine("Hallo " + neueFreund.Name);
+        meinFreund.SagHallo();
+        Console.WriteLine("Hallo " + meinFreund.Name);
     }
 }
 ```
@@ -188,7 +189,7 @@ Wenn wir das Programm ausführen sieht das Ergebniss so aus:
 
 ## Aufgabe
 
-* Vervollständige die Klasse um die andere Eingeschaften wie _Geschlecht_, _Spitzname_ und _Adresse_. 
-* Die Methode ```SagHallo``` soll folgende Text auszugeben: "Hallo ich heiße _Name_ bin _Alter_ alt. Meine Freunde nennen mich auch _Spitzname_." Falls keine _Spitzname_ vorhanden ist, sollte der letzte Satz nicht ausgegeben werden.
-* Initializiere die Klasse mit einem Konstruktor, wo du auch die Parametern _Geschlecht_, _Spitzname_ und _Alter_ übergibst.
-* Benutze die Klasse in einem Program und gebe die Informationen mit hilfe der Methode ```SagHallo``` in einer Console aus.
+* Vervollständige die Klasse mit weiteren Eigeschaften wie _Geschlecht_, _Spitzname_ und _Adresse_. 
+* Erweitere die Methode ```SagHallo```, damit die neuen Eigenschaften ebenfalls berücksichtigt werden. Zum Beispiel so: "Hallo ich heiße _Name_ und bin _Alter_ alt. Meine Freunde nennen mich auch _Spitzname_." Falls keine _Spitzname_ vorhanden ist, sollte der letzte Satz natürlich nicht ausgegeben werden.
+* Initializiere die Klasse mit einem Konstruktor, welcher die Eigenschaften _Geschlecht_, _Spitzname_ und _Alter_ als Parameter akzeptiert.
+* Benutze die Klasse in einem Program und gib die Informationen mit hilfe der Methode ```SagHallo``` auf der Console aus.
