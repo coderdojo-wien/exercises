@@ -4,34 +4,28 @@ Ziel dieses Übung ist ein Spielwürfel für micro_bit zu enwerfen.
 
 ## Funktionen für verschiedene Würfelzustände
 
-Wir benötigen für jeden Würfelzustand eine Funktion. Mit Würfelzustand ist das gemeint was nach jedem Wurf angezeigt wird.
+Wir benötigen für jeden Würfelzustand eine Funktion. Mit Würfelzustand ist das gemeint, was nach jedem Wurf angezeigt wird.
 
-1) Um eine Funktion zu erzeugen wählt man in _Fortgeschritten_ Menu _Functions_ und dann _Make a Function_.
+Um eine Funktion zu erzeugen wähle  _Functions_ in _Fortgeschritten_ aus und dann _Make a Function_. Benenne die Funktion mit _zeigeEins_.
 
-    ![](images/create_function.png)
+![](images/create_function.png)
 
-2) Benenne die Funktion mit _zeigeEins_.
+![](images/function_show_one.png)
 
-    ![](images/function_show_one.png)
+Die Funktion ```function zeigeEins``` soll ein Zahl _eins_ am Display von micro:bit zeigen. Dazu wähle in _Grundlagen_ das Baustein ```zeige LEDs``` aus und verschiebe diese in die ```function zeigeEins```. Zusätzlich markiere in mitte die Diode die aufleuchten soll.
 
-3) Definiere die Funktion ```function zeigeEins```.
+![](images/display_shows_one.png)
 
-    Die Funktion ```function zeigeEins``` soll die Zahl _eins_ am Display von micro:bit zeigen.
+Das selbe wiederhole für alle andere Würfelzustände.
 
-    Dazu wählen wir in _Grundlagen_ das Baustein ```zeige LEDs``` aus und verschieben wir diese in die ```function zeigeEins```. Zusätzlich markiern in mitte die Diode die aufleuchten soll.
-
-    ![](images/display_shows_one.png)
-
-4) Andere Würfelzustände definiereng
-
-    Das selbe wiederholen wir für alle andere Würfelzustände.
-
-    ![](images/all_show_functions.png)
+![](images/all_show_functions.png)
 
 ## Würfeln
 
-Der micro:bit kann mit seinem Beschleunigungssensor auf schütteln reagieren.
- 
-1) Wählen wir von _Eingabe_ ein Block ```wenn geschüttelt``` aus.
+Der micro:bit kann mit seinem Beschleunigungssensor auf schütteln reagieren. Um dieses zu ermöglichen
+wähle von _Eingabe_ ein Block ```wenn geschüttelt``` aus. Diese Block wird immer dann aufgerufen wenn der micro:bit geschüttelt wird.
 
+![](images/event_when_shaken.png)
+
+Als nächstes muss du eine zufällige Zahl ermitteln. Das kannst    
 
