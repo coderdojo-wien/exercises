@@ -58,3 +58,34 @@ namespace HelloWorld
 ```
 
 Jetzt kannst du das Programm ganz einfach mit der Taste F5 starten. Du wirst jedoch sehen, dass das Programm zwar startet aber ziemlich schnell wieder beendet wird. Mann muss also noch eine Pause einbauen. Mit der Methode ```Console.ReadKey()``` wird dein Programm auf eine beliebige Eingabe warten. Überlegt dir, wo du diesen Methodenaufruf am besten einbaust.
+
+# "Hello World" in Visual Studio Code
+Als alternative zu Visual Studio kannst auch [Visual Studio Code][visual_studio_code_link] verwenden. Visual Studio Code ist ein Plattformübergreifendes Editor zur Entwicklung von Consolen-, Web- und Cloud-Anwendungen und bietet unter anderem Funktionen wie Syntax-Highlighting für mehr als 20 Programmiersprachen.
+
+## Installation von Tools
+1) Als erstes muss du dir ein [.NET Core Framework](https://www.microsoft.com/net/core) installieren.
+2) Installiere dir nun [Visual Studio Code][visual_studio_code_link].
+3) Installiere dir [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) von VS Code Marketplace.
+
+[visual_studio_code_link]: https://code.visualstudio.com
+
+## Program erstellen
+Als erstes muss du ein dir ein Verzeichniss auswählen wo du dein Program erstellen möchtest. Öffne dazu ein _Terminal_ in Visual Studio Code. Dazu gehst du auf Menü _View_ und wählst _Integrated Terminal_ aus.
+
+![](images/open_new_terminal.PNG)
+
+In den Terminal tipps du dann folgendes Befehl: ```cd [Pfad]``` wo Pfad das tatsächliche Pfad zum deinem Verzeichniss ist. Wir nehmen an du möchtest das auf deinem Desktop erstellen, also wird das Befehl ```cd c:\Users\[Benutzername]\Desktop``` lauten, wo Benutzername dein Windows Benutzername ist.
+
+![](images/navigate_to_folder.gif)
+
+Jetzt können wir ein neues Program anlegen. Das machst du mit dem Befehlt ```dotnet new console -n HelloWorld```. Jetzt wird ein neues Verzeichnis angelegt und du öffnest nun dieses Verzeichniss mit dem Visual Studio Code. Dazu gehst du auf _File_ und _Open Folder_.
+
+![](images/open_folder.PNG)
+
+Wenn du auf das _Program.cs_ clicks, öffnet sich nun das Program. Es wird wahrscheinlich ein Dialog mit _Required assets to Build and Debug are missing from 'HelloWorld'. Add them?_ erscheinen. Beantworte es mit _Yes_.
+
+![](images/open_program.PNG)
+
+Jetzt kannst du das Programm mit _F5_ starten. Möglicherweise erscheint wieder ein Dialog mit _Environment Settings_. Wähle dazu _.NET Core_ aus.
+
+![](images/select_environment.PNG)
