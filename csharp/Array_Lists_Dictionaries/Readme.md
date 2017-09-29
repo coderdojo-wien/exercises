@@ -13,12 +13,12 @@ int[] alterMeinerFreunde = { 10, 12, 11, 9, 10 };
 oder anders
 
 ```csharp
-int[] alterMeinerFreunde = new [5];
-int[0] = 10;
-int[1] = 12;
-int[2] = 11;
-int[3] = 9;
-int[4] = 10;
+int[] alterMeinerFreunde = new int [5];
+alterMeinerFreunde[0] = 10;
+alterMeinerFreunde[1] = 12;
+alterMeinerFreunde[2] = 11;
+alterMeinerFreunde[3] = 9;
+alterMeinerFreunde[4] = 10;
 ```
 
 Beide Beispiele machen dasselbe. In der Variablen `alterMeinerFreunde` werden die fünf Zahlen 10, 12, 11, 9, 10 gespeichert. Jeder dieser Zahlen hat im Array auch eine Position, auch _Index_ genannt. Im zweiten Beispiel siehst du das deutlicher. Die Zahl 10 hat die Position 0, die Zahl 12 die Position 2 usw. Vielleich fragst du dich warum man bei der Position mit der Zahl 0 beginnt. Dazu kannst du in Internet viele [Antworten finden](https://www.google.at/search?q=why+arrays+start+at+0) und du kannst selber entscheiden welche Antwort für dich passt: für uns ist es nun ein Fakt: **Ein Array fängt in C# immer bei Position 0 an.** 
