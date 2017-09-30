@@ -60,10 +60,10 @@ namespace HelloWorld
 Jetzt kannst du das Programm ganz einfach mit der Taste F5 starten. Du wirst jedoch sehen, dass das Programm zwar startet aber ziemlich schnell wieder beendet wird. Mann muss also noch eine Pause einbauen. Mit der Methode ```Console.ReadKey()``` wird dein Programm auf eine beliebige Eingabe warten. Überlegt dir, wo du diesen Methodenaufruf am besten einbaust.
 
 # "Hello World" in Visual Studio Code
-Als alternative zu Visual Studio kannst auch [Visual Studio Code][visual_studio_code_link] verwenden. Visual Studio Code ist ein Plattformübergreifendes Editor zur Entwicklung von Consolen-, Web- und Cloud-Anwendungen und bietet unter anderem Funktionen wie Syntax-Highlighting für mehr als 20 Programmiersprachen.
+Wenn du kein Visual Studio verwenden kannst oder willst, so steht dir mit [Visual Studio Code][visual_studio_code_link] eine Alternative zur Verfügung. Visual Studio Code ist ein plattformübergreifender Editor der bei Entwicklern sehr beliebt ist und unter anderem Funktionen wie Syntax-Highlighting für mehr als 20 Programmiersprachen bietet.
 
-## Installation von Tools
-1) Als erstes muss du dir ein [.NET Core Framework](https://www.microsoft.com/net/core) installieren.
+## Installation der Tools
+1) Als erstes muss du dir das [.NET Core SDK](https://www.microsoft.com/net/core) installieren.
 2) Installiere dir nun [Visual Studio Code][visual_studio_code_link].
 3) Installiere dir [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) von VS Code Marketplace.
 
@@ -74,7 +74,7 @@ Als erstes muss du ein dir ein Verzeichniss auswählen wo du dein Program erstel
 
 ![](images/open_new_terminal.PNG)
 
-In den Terminal tipps du dann folgendes Befehl: ```cd [Pfad]``` wo Pfad das tatsächliche Pfad zum deinem Verzeichniss ist. Wir nehmen an du möchtest das auf deinem Desktop erstellen, also wird das Befehl ```cd c:\Users\[Benutzername]\Desktop``` lauten, wo Benutzername dein Windows Benutzername ist.
+In einem Terminal tipps du dann folgendes: ```cd [Pfad]``` wobei [Pfad] der Pfad zum deinem Verzeichniss ist. Wir nehmen an du möchtest das auf deinem Desktop erstellen, also wird das Befehl ```cd C:\Users\[Benutzername]\Desktop``` lauten ([Benutzername] dein Windows Benutzername ist).
 
 ![](images/navigate_to_folder.gif)
 
@@ -82,7 +82,7 @@ Jetzt können wir ein neues Program anlegen. Das machst du mit dem Befehlt ```do
 
 ![](images/open_folder.PNG)
 
-Wenn du auf das _Program.cs_ clicks, öffnet sich nun das Program. Es wird wahrscheinlich ein Dialog mit _Required assets to Build and Debug are missing from 'HelloWorld'. Add them?_ erscheinen. Beantworte es mit _Yes_.
+Wenn du auf das _Program.cs_ clickst, öffnet sich nun das Program. Es wird wahrscheinlich ein Dialog mit _Required assets to Build and Debug are missing from 'HelloWorld'. Add them?_ erscheinen. Beantworte es mit _Yes_.
 
 ![](images/open_program.PNG)
 
