@@ -53,7 +53,7 @@ switch (meinObst)
 
 ### Die Algorithmen
 
-Für dein Programm benötigst du noch die verschiedenen Berechnungsalgorithmen. Sie haben alle etwas gemeinsam, das können wir auch in C# ausdrücken. Für dieses Beispiel verwenden wir dazu ein ```ìnterface``` _Algorithmus  in dem du beschreibst was eine ```class``` anbieten muss um von unserem Hauptprogramm als Algorithmus verwendet werden zu können.
+Für dein Programm benötigst du noch die verschiedenen Berechnungsalgorithmen. Sie haben alle etwas gemeinsam, das können wir auch in C# ausdrücken. Für dieses Beispiel verwenden wir dazu ein ```interface``` Algorithmus  in dem du beschreibst was eine ```class``` anbieten muss um von unserem Hauptprogramm als Algorithmus verwendet werden zu können.
 
 Ein ```interface``` für zweidimensionale geometrische Formen kann zum Beispiel so aussehen:
 
