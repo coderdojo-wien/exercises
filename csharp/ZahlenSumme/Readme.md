@@ -53,7 +53,7 @@ switch (meinObst)
 
 ### Die Algorithmen
 
-Für dein Programm benötigst du noch die verschiedenen Berechnungsalgorithmen. Sie haben alle etwas gemeinsam, das können wir auch in C# ausdrücken. Für dieses Beispiel verwenden wir dazu ein ```interface``` Algorithmus  in dem du beschreibst was eine ```class``` anbieten muss um von unserem Hauptprogramm als Algorithmus verwendet werden zu können.
+Für dein Programm benötigst du noch die verschiedenen Berechnungsalgorithmen. Sie haben alle etwas gemeinsam, das können wir auch in C# ausdrücken. Für dieses Beispiel verwenden wir dazu ein ```interface``` in dem du beschreibst was eine ```class``` anbieten muss um von unserem Hauptprogramm als Algorithmus verwendet werden zu können.
 
 Ein ```interface``` für zweidimensionale geometrische Formen kann zum Beispiel so aussehen:
 
@@ -77,6 +77,6 @@ Du kannst nun ein ```interface``` erzeugen in dem du beschriebst welche Methoden
 Die Ausgabe des fertigen Programms sieht dann zum Beispiel so aus:
 ![Konsole](images/Console.png)
 
-[dotnet-cli-tools]: https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x
-[dotnet-csharp-enum]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/enum
-[dotnet-csharp-interface]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface
+[dotnet-cli-tools]: https://docs.microsoft.com/de-de/dotnet/core/tools/?tabs=netcore2x
+[dotnet-csharp-enum]: https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/enum
+[dotnet-csharp-interface]: https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface
