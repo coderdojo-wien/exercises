@@ -1,41 +1,40 @@
 # Spielwürfel
 
-Ziel dieses Übung ist ein Spielwürfel für micro_bit zu enwerfen.
+In dieser Übung wirst du auf deinem micro:bit einen Spielwürfel entwickeln.
 
 ## Funktionen für verschiedene Würfelzustände
 
-Wir benötigen für jeden Würfelzustand eine Funktion. Mit Würfelzustand ist das gemeint, was nach jedem Wurf angezeigt wird.
+Für jeden Würfelzustand benötigst du eine Funktion. Mit Würfelzustand ist das gemeint, was nach jedem Wurf angezeigt wird.
 
-Um eine Funktion zu erzeugen wähle  _Functions_ in _Fortgeschritten_ aus und dann _Make a Function_. Benenne die Funktion mit _zeigeEins_.
+Um eine Funktion zu erzeugen wähle im Menü _Fortgeschritten_ zuerst _Functions_ und schließlich _Make a Function_ aus. Benenne die Funktion mit _zeigeEins_.
 
 ![](images/create_function.png)
 
 ![](images/function_show_one.png)
 
-Die Funktion ```function zeigeEins``` soll ein Zahl _eins_ am Display von micro:bit zeigen. Dazu wähle in _Grundlagen_ das Baustein ```zeige LEDs``` aus und verschiebe diese in die ```function zeigeEins```. Zusätzlich markiere in mitte die Diode die aufleuchten soll.
+Die Funktion ```function zeigeEins``` soll die Zahl _eins_ am Display deines micro:bit anzeigen. Dazu wähle in _Grundlagen_ den Baustein ```zeige LEDs``` aus und verschiebe diesen in die ```function zeigeEins```. In dem Beaustein markierst du dann die LED in der Mitte welche aufleuchten soll wenn die Eins anzeigt wird.
 
 ![](images/display_shows_one.png)
 
-Dasselbe wiederhole für alle andere Würfelzustände.
+Lege nun auch für alle anderen Würfelzustände, also zwei bis sechs, jeweils eine Funktion nach obigen Muster an.
 
 ![](images/all_show_functions.png)
 
 ## Würfeln
 
-Der micro:bit kann mit seinem Beschleunigungssensor auf schütteln reagieren. Um dieses zu ermöglichen
-wähle von _Eingabe_ ein Block ```wenn geschüttelt``` aus. Diese Block wird immer dann aufgerufen wenn der micro:bit geschüttelt wird.
+Der micro:bit kann mit seinem Beschleunigungssensor auf schütteln reagieren. Um dieses zu ermöglichen wähle von _Eingabe_ den Block ```wenn geschüttelt``` aus. Dieser Block wird immer dann aufgerufen, wenn der micro:bit geschüttelt wird.
 
 ![](images/event_when_shaken.png)
 
-Als nächstes muss du eine zufällige Zahl ermitteln. Das kannst mit eine Funktion ```pick random``` verwenden. Bevor wir jedoch diese Baustein verwenden, benötigen wir eine Variable um das zufällige Zahl zu speichern. Um die Variable zu erzeugen gehe zu _Variablen_ und verschiebe der Baustein ```ändere Platzhalter auf 0``` ins Baustein ```wenn geschüttelt```. Dann nehme dazu von _Mathematik_ oben erwähnte ```pick random``` Baustein.
+Als nächstes muss du eine zufällige Zahl erzeugen. Dazu kannst du die Funktion ```pick random``` verwenden. Um den Baustein verwenden zu können, benötigst du noch eine Variable, in welcher die Zufallszahl gespeichert wird. Um die Variable zu erzeugen gehe zu _Variablen_ und verschiebe der Baustein ```ändere Platzhalter auf 0``` ins Baustein ```wenn geschüttelt```. Dann verwendest du aus  _Mathematik_ den bereits erwähnten ```pick random``` Baustein.
 
 ![](images/add_new_random_number_variable.png)
 
-Schön wäre auch die Variable ```Platzhalter``` zum etwas verständlicheren umzubennen. Das kannst du machen wenn du auf das kleines Dreieck neben die Variable ```Platzhalter``` klickst und _Rename variable..._ wählst. Du kannst die Variable zum Beispiel ```GewürfelteZahl``` nennen.
+Die Variable ```Platzhalter``` hat jetzt allerdings einen nicht sehr sprechenden Namen. Entwickler vergeben gerne sprechende Namen um die Programme besser lesen zu können. Bennen also die Variable noch um. Das kannst du machen in dem du auf das kleines Dreieck neben der Variablen ```Platzhalter``` klickst und _Rename variable..._ wählst. So kannst du die Variable zum Beispiel ```GewürfelteZahl``` nennen.
 
 ![](images/rename_variable.png)
 
-Vielleicht ist dir aufgefallen dass das interval für zufällige  Zahl zwischen 0 und bei 5 liegt. Das kann auf dem ersten Blick merkwürdig sein. Aber wir können nun sechs mögliche Zahlen würfeln und wenn man bei null anfängt dann ist das höchste eben fünf. Um das Programm verständlicher und lesbar zu gestallten können wir ja die Variable ```GewürfelteZahl```um eins erhöhen.
+Vielleicht ist dir aufgefallen, dass das Intervall aus welchem die Zufallszahl gewählt wird zwischen 0 und bei 5 liegt. Aun den ersten Blick wirkt dies etwas merkwürdig. Aber wir können nun sechs mögliche Zahlen würfeln und wenn man bei _Null_ anfängt, dann ist die höchste Zahl eben _Fünf_. Um das Programm verständlicher und lesbar zu gestalten kannst du Variable ```GewürfelteZahl``` um eins erhöhen und so ein Intervall von _Eins_ bis _Sechs_ erhalten.
 
 ![](images/increase_variable.png)
 
