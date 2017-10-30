@@ -2,6 +2,8 @@
 
 In diesem Beispiel wirst du verschiedene Algorithmen entwickeln mit welchen die Summe von natürlichen Zahlen berechnet werden kann. Dabei wirst du auch einige Konzepte der Programmierung mit C# kennen lernen, wie zum Beispiel _Interfaces_, _Enums_ und _Rekursion_.
 
+Um das Beispiel zu lösen benötigst du ein Hauptprogramm, in dem die Ein- und Ausgabe passiert sowie die weiteren Bestandteile des Projekts miteinander verbunden werden. Außerdem werden noch mehrere Klassen (```class```) für die unterschiedlichen Algorithmen benötigt. Im weiteren skizzieren was diese Bestandteile ausmacht.
+
 ## Neues .NET Core Projekt
 Zu Beginn lege dir ein neues .NET Core Projekt an. Dazu kannst du in einer Konsole folgende Befehle ausführen. Du kannst in der [Dokumentation der .NET Core CLI Tools][dotnet-cli-tools] nachlesen was die einzelnen Befehle bewirken.
 
