@@ -4,6 +4,14 @@ In diesem Beispiel wirst du verschiedene Algorithmen entwickeln mit welchen die 
 
 Um das Beispiel zu lösen benötigst du ein Hauptprogramm, in dem die Ein- und Ausgabe passiert sowie die weiteren Bestandteile des Projekts miteinander verbunden werden. Außerdem werden noch mehrere Klassen (```class```) für die unterschiedlichen Algorithmen benötigt. Im weiteren skizzieren was diese Bestandteile ausmacht.
 
+---
+**Was ist ein Algorithmus**
+
+Ein _Algorithmus_ ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten. Damit können sie zur Ausführung in einem Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
+
+Quelle: [Wikipedia][wikipedia-algorithmus]
+---
+
 ## Neues .NET Core Projekt
 Zu Beginn lege dir ein neues .NET Core Projekt an. Dazu kannst du in einer Konsole folgende Befehle ausführen. Du kannst in der [Dokumentation der .NET Core CLI Tools][dotnet-cli-tools] nachlesen was die einzelnen Befehle bewirken.
 
@@ -82,3 +90,4 @@ Die Ausgabe des fertigen Programms sieht dann zum Beispiel so aus:
 [dotnet-cli-tools]: https://docs.microsoft.com/de-de/dotnet/core/tools/?tabs=netcore2x
 [dotnet-csharp-enum]: https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/enum
 [dotnet-csharp-interface]: https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface
+[wikipedia-algorithmus]: https://de.wikipedia.org/wiki/Algorithmus
