@@ -13,40 +13,43 @@ namespace SumOfNumbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcher Algorithmus?");
-            Console.WriteLine("  Schleife ( {0} )", (int)Algorithmus.Schleife);
-            Console.WriteLine("  Gauss'sche Formel ( {0} )", (int)Algorithmus.Gauss);
-            Console.WriteLine("  Rekursion ( {0} )", (int)Algorithmus.Rekursion);
-
-            Console.Write("? ");
-            Algorithmus algorithmus = (Algorithmus)Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Zahl: ");
-            int zahl = Convert.ToInt32(Console.ReadLine());
-
-            IAlgorithmus algorithm = null;
-
-            // Algorithmus Objekt erzeugen
-            switch (algorithmus)
+            while(true)
             {
-                case Algorithmus.Schleife:
-                    algorithm = new SchleifenAlgorithmus();
-                    break;
+                Console.WriteLine("Welcher Algorithmus?");
+                Console.WriteLine("  Schleife ( {0} )", (int)Algorithmus.Schleife);
+                Console.WriteLine("  Gauss'sche Formel ( {0} )", (int)Algorithmus.Gauss);
+                Console.WriteLine("  Rekursion ( {0} )", (int)Algorithmus.Rekursion);
 
-                case Algorithmus.Gauss:
-                    algorithm = new GaussAlgorithmus();
-                    break;
+                Console.Write("? ");
+                Algorithmus algorithmus = (Algorithmus)Convert.ToInt32(Console.ReadLine());
 
-                case Algorithmus.Rekursion:
-                    algorithm = new RecursionAlgorithmus();
-                    break;
+                Console.Write("Zahl: ");
+                int zahl = Convert.ToInt32(Console.ReadLine());
+
+                IAlgorithmus algorithm = null;
+
+                // Algorithmus Objekt erzeugen
+                switch (algorithmus)
+                {
+                    case Algorithmus.Schleife:
+                        algorithm = new SchleifenAlgorithmus();
+                        break;
+
+                    case Algorithmus.Gauss:
+                        algorithm = new GaussAlgorithmus();
+                        break;
+
+                    case Algorithmus.Rekursion:
+                        algorithm = new RecursionAlgorithmus();
+                        break;
+                }
+
+                // Berechnung
+                int summe = algorithm.Summe(zahl);
+
+                // Ausgabe
+                Console.WriteLine($"Summe der Zahlen bis {zahl} ist {summe}");
             }
-
-            // Berechnung
-            int summe = algorithm.Summe(zahl);
-
-            // Ausgabe
-            Console.WriteLine($"Summe der Zahlen bis {zahl} ist {summe}");
         }
     }
 }
