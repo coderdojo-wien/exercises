@@ -34,7 +34,7 @@ namespace HelloWorld
 In C# gibt es eine Methode ```Console.WriteLine``` mit der man einen beliebigen Text auf dem Bildschirm ausgeben kann. Das untere Beispiel gibt den Text _"Hello World!"_ aus.
 
 ```csharp 
-Console.WriteLine("Hello World!")
+Console.WriteLine("Hello World!");
 ```
 Jetzt das komplette Program:
 
@@ -51,7 +51,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!")
+            Console.WriteLine("Hello World!");
         }
     }
 }
