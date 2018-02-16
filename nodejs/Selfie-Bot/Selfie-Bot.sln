@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Selfie-Bot", "Selfie-Bot\Selfie-Bot.njsproj", "{7606F5F7-6251-40F6-B2CC-FCB2E02633DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7606F5F7-6251-40F6-B2CC-FCB2E02633DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7606F5F7-6251-40F6-B2CC-FCB2E02633DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7606F5F7-6251-40F6-B2CC-FCB2E02633DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7606F5F7-6251-40F6-B2CC-FCB2E02633DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7D137D1-C779-4121-B705-5581FDEAE673}
+	EndGlobalSection
+EndGlobal
