@@ -19,26 +19,26 @@ Installiere die letzte Version von Visual Studio kostenlos von <a href="https://
 Lade außerdem den <a href="https://github.com/Microsoft/BotFramework-Emulator/releases" target="_blank">Bot Emulator</a> für dein System herunter.
 
 ### 2) Keys abrufen
-Wir verwenden Microsoft Cognitive Services um das Bild zu analysieren und benötigen dafür einen API-Schlüssel. Dazu wechseln wir auf <a href="https://azure.microsoft.com/de-de/try/cognitive-services/?api=face-api">diese Seite</a> und wählen API-Schlüssel abrufen aus.
+Wir verwenden Microsoft Cognitive Services um das Bild zu analysieren und benötigen dafür einen API-Schlüssel. Dazu wechseln wir auf <a href="https://azure.microsoft.com/de-de/try/cognitive-services/?api=face-api">diese Seite</a> und wählen "API-Schlüssel abrufen" aus.
 
 <p align="center">
   <img src="images/face-api.png">
 </p>
 
-Ein Microsoft oder Facebook-Konto ist notwendig um den Schlüssel abrufen zu können. Der Schlüssel ist danach als Zeichenkette abrufbar
+Ein Microsoft oder Facebook-Konto ist notwendig um den Schlüssel generieren zu können. Der Schlüssel ist danach als Zeichenkette abrufbar
 
 <p align="center">
   <img src="images/api-key.png">
 </p>
 
 ### 3) Projekt laden und starten
-Lade dieses Projekt herunter und wechsle in den Ordner nodejs/Selfie-Bot, dort findest du die Datei Selfie-Bot.sln. Nachdem du Visual Studio installiert hast, kannst du die Datei mit einem Doppelklick öffnen. Alle notwendigen Module sind bereits im Projekt vorhanden damit keine zusätzliche Installation notwendig ist. Wähle in Visual Studio im "Solution Explorer" (rechtes Menü" die Datei "app.js" aus, dies sollte wie folgt aussehen:
+Lade dieses Projekt herunter und wechsle in den Ordner nodejs/Selfie-Bot, dort findest du die Datei Selfie-Bot.sln. Nachdem du Visual Studio installiert hast, kannst du die Datei mit einem Doppelklick öffnen. Alle notwendigen Module sind bereits im Projekt vorhanden damit keine zusätzlichen Installationen notwendig sind. Wähle in Visual Studio im "Solution Explorer" (rechtes Menü) die Datei "app.js" aus, dies sollte wie folgt aussehen:
 
 <p align="center">
   <img src="images/visual-studio.PNG">
 </p>
 
-Ersetze den Platzhaltertext für const apiKey mit dem Schlüssel aus Schritt 2:
+Ersetze den Platzhaltertext für "const apiKey" mit dem Schlüssel aus Schritt 2:
 
 ```typescript
 const apiKey = "<ADD FACY API KEY HERE>"
