@@ -1,8 +1,10 @@
-# Arbeiten mit dem Lage und Beschleunigungssensor auf dem micro:bit
+# Arbeiten mit dem Beschleunigungssensor auf dem micro:bit
 
 ## Was ist ein micro:bit?
 
 Solltest Du die Einführung zum micro:bit noch nicht gelesen haben, findest Du sie [hier][1]
+
+## Wie messe ich die Beschleunigung?
 
 Öffne den [makecode][2] Editor.
 
