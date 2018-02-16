@@ -1,42 +1,60 @@
 ﻿# Selfie-Bot
-Dieser Bot wurde 
+Dieser Bot wurde mit <a href="https://github.com/Microsoft/botbuilder-js" target="_blank">Microsoft Botbuilder SDK v4</a> in Node.js geschrieben. Er nimmt ein Bild/Selfie entgegen und ruft <a href="https://azure.microsoft.com/de-de/services/cognitive-services/face/" target="_blank">Microsoft Cognitive Services (Face API)</a> auf um das Bild zu analysieren hinsichtlich Geschlecht, Alter, Lächeln und Brille.
+
 <p align="center">
-  <img src="images/screen.gif">
+  <img src="images/selfie-bot.png">
 </p>
 
 ## Los geht's!
 
-### 1) Prerequisites
-Make sure you have the latest version of Visual Studio installed, you can download the latest version for free [here](https://www.visualstudio.com/en/downloads).
+Folgende Schritte sind notwendig um den Bot zu entwickeln:
 
-Choose at least the ASP.NET and the NodeJS workload.<br/>
+### 1) Notwendige Installationen
+Installiere die letzte Version von Visual Studio kostenlos von <a href="https://www.visualstudio.com/en/downloads" target="_blank">hier</a>. Als Workload sollten auf jeden Fall Node.js-Entwicklung und am besten auch ASP.NET-Entwicklung ausgewählt sein:
 
-![](images/setup.png)
+<p align="center">
+  <img src="https://github.com/christian-vorhemus/DashboardTemplate/blob/master/images/setup.png">
+</p>
 
-Next, go to the [node.js download page](https://nodejs.org/en/download/) and download & install node. 
+Lade außerdem den <a href="https://github.com/Microsoft/BotFramework-Emulator/releases" target="_blank">Bot Emulator</a> für dein System herunter.
 
-### 2) Set up application
-Download or clone this repository
-```
-git clone https://github.com/christian-vorhemus/DashboardTemplate.git
-```
-Open a console/terminal and switch to the DashboardTemplate directory (this is the directory where app, bin, package.json, etc. is located). Type
-```
-npm install
-```
-to install the necessary node packages. This may take a while.
+### 2) Keys abrufen
+Wir verwenden Microsoft Cognitive Services um das Bild zu analysieren und benötigen dafür einen API-Schlüssel. Dazu wechseln wir auf <a href="https://azure.microsoft.com/de-de/try/cognitive-services/?api=face-api">diese Seite</a> und wählen API-Schlüssel abrufen aus.
 
-### 3) Get INQStats key and add it to the project
-INQStats is used to retrieve demographic data. Go to the [INQStats API page](http://blog.inqubu.com/inqstats-open-api-published-to-get-demographic-data), enter your name, eMail and a short description and press send - you'll receive an API key.
-Doubleclick on DashboardTemplate.sln to open the solution. Navigate to app/mainPage/app.service.ts and find the line
+<p align="center">
+  <img src="images/face-api.png">
+</p>
+
+Ein Microsoft oder Facebook-Konto ist notwendig um den Schlüssel abrufen zu können. Der Schlüssel ist danach als Zeichenkette abrufbar
+
+<p align="center">
+  <img src="images/api-key.png">
+</p>
+
+### 3) Projekt laden und starten
+Lade dieses Projekt herunter und wechsle in den Ordner nodejs/Selfie-Bot, dort findest du die Datei Selfie-Bot.sln. Nachdem du Visual Studio installiert hast, kannst du die Datei mit einem Doppelklick öffnen. Alle notwendigen Module sind bereits im Projekt vorhanden damit keine zusätzliche Installation notwendig ist. Wähle in Visual Studio im "Solution Explorer" (rechtes Menü" die Datei "app.js" aus, dies sollte wie folgt aussehen:
+
+<p align="center">
+  <img src="images/visual-studio.PNG">
+</p>
+
+Ersetze den Platzhaltertext für const apiKey mit dem Schlüssel aus Schritt 2:
+
 ```typescript
-apiKey: string = "<ADD YOUR INQSTATS KEY HERE>";
+const apiKey = "<ADD FACY API KEY HERE>"
 ```
-Paste your INQStats API key here.
-In Visual Studio, press F5 to start a local webserver, you should now see the application running in a browser.
 
-## Troubleshooting
+Starte den Bot, indem du in Visual Studio auf F5 klickst. Es öffnet sich eine Website und die Konsole. Kopiere die Adresse, die im Browser aufscheint:
 
-If the app gets stuck at the "Loading app" screen, open the browser console (F12) and check for errors. If you see a "ZoneAwareError" saying that d3/index.js cannot be found, delete your browser cache and try again.
+<p align="center">
+  <img src="images/browser.png">
+</p>
 
-If you see the template with empty charts, make sure your INQStats key is set and valid.
+### 4) Bot im Emulator testen
+Starte Bot Emulator, wähle die Adresse, die du soeben kopierst hast, füge "/api/messages" hinzu, und klicke auf "Connect":
+
+<p align="center">
+  <img src="images/emulator.png">
+</p>
+
+Du solltest nun mit dem Bot kommunizieren können.
