@@ -10,7 +10,7 @@ Diese spielt in vielen Schaltungen eine wichtige Rolle siehe auch Artikel in [Wi
 ### Aufbau
 Das folgende Diagramm zeigt den Aufbau der dazugehörigen Schaltung.
 
-![Schaltung](\exercises\microbit\FanController\FanControlWiring_Steckplatine.png, "Schaltdiagramm")
+![Schaltung](images\FanControlWiring_Steckplatine.png)
 
 ### Code
 
