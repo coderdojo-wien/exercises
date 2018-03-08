@@ -10,7 +10,7 @@ Ist ein spiel wo du noch zusätzliche Dinge ausser dem micro:bit selbst benötig
 
 Wir nehmen zuerst das kurze Stück draht, biegen es und verdrehen es, sodass ein Stab mit einer größeren Schlaufe entsteht (es sollte ca euer kleiner Finger hinein passen).
 
-![](images/draht.jpg)
+![](images/Draht.jpg)
 
 Das lange Stück Draht biegen wir mit ein paar Schleifen darin und stecken die Enden jeweils in ein Stück Knetmasse.
 
