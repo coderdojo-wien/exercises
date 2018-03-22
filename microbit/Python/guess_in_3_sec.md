@@ -19,7 +19,7 @@ Each play will consist of showing a random image, and giving the player 3 second
 
 Conveniently enough, micro:bit offers an online Python editor. In order run it on the micro:bit device it has to be  downloaded (as an .hex file). Once the device is connected to a computer's USB port, that file could be copied to the device, and right after it will start.
 
-![micro:bit python](https://imgur.com/a/nIqEB)
+![micro:bit python](https://i.imgur.com/u8aHsz3.png)
 
 ### Code
 
