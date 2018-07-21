@@ -1,11 +1,11 @@
 # Was ist CodinGame?
-[CodinGame][1] ist eine Platform wo man programmieren lernen kann. Es gibt Aufgaben in verschieden Schwierigkeitsgraden die man mittels mehrere Programmiersprache lösen kann. Man kann entweder online programmieren oder, was noch besser ist, mittels eigenen Editor.
+[CodinGame][1] ist eine Platform auf der man Programmieren lernen kann. Es gibt Aufgaben in verschieden Schwierigkeitsstufen welche man in verschienden Programmiersprachen lösen kann. Man kann entweder online programmieren oder, noch besser ist, mit dem eigenen Editor.
 
 # Online Entwicklungsumgebung
 
 ![](images/CodinGame_IDE.png)
 
-Das online Entwicklungsumgebung besteht aus mehrere Bereichen:
+Die online Entwicklungsumgebung besteht aus mehrere Bereichen:
 
 * Aufgabe
 	
@@ -13,7 +13,7 @@ Das online Entwicklungsumgebung besteht aus mehrere Bereichen:
 
 * Auswahl Programmiersprache
 
-	Da wähl du die Programmiersprache in den die du Aufgabe lösen möchtest
+	Du wählst die Programmiersprache in welcher du die Aufgabe lösen möchtest
 
 * Quellcode
 
@@ -21,11 +21,11 @@ Das online Entwicklungsumgebung besteht aus mehrere Bereichen:
 
 * Testfälle
 	
-	Durch die Testfälle kannst du überprüfen ob du die Aufgabe gelöst hast
+	Mit den Testfälle kannst du überprüfen ob du die Aufgabe gelöst hast
 
 * Ausgabe
 
-	In Ausgabe siehst du Mitteilungen die durch das Program ausgegeben werden
+	Hier siehst du die Mitteilungen welche vom Program ausgegeben werden
 
 * Spiel
 
@@ -34,7 +34,7 @@ Das online Entwicklungsumgebung besteht aus mehrere Bereichen:
 ## Entwicklen in eigenen Entwicklungsumgebung
 
 ### Einen neuen Projekt anlegen
-Lege ein Projekt in deinem Entwicklungsumgebung. Wie du einen neuen Projekt in Visual Studio oder Visual Studio Code anlegen kannst du [hier](../Hello_World/Readme.md) nachlesen.
+Lege ein Projekt in deiner Entwicklungsumgebung an. Wie du ein neues Projekt in Visual Studio oder Visual Studio Code anlegen kannst du [hier](../Hello_World/Readme.md) nachlesen.
 
 ### Code synchronization
 Wir zeigen dir wie du ein Code von [CodinGame][1] auf deinem Computer synchronizieren kann. Als erstes brauchst du dazu ein [Chrome Browser](https://www.google.com/chrome/). Dann must du dir folgende zwei erweiteung installieren:
