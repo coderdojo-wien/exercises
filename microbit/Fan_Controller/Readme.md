@@ -14,7 +14,7 @@ Das folgende Diagramm zeigt den Aufbau der dazugehörigen Schaltung.
 
 ### Code
 
-FanController.js enthält das JavaScript für den [Microsoft Block Editor](https://makecode.microbit.org/)
+Die Datei [microbit-fancontroller.js](src/microbit-fancontroller.js) enthält das JavaScript für den [Microsoft Block Editor](https://makecode.microbit.org/)
 
 Die eigentliche Steuerung der Motorgeschwindigkeit passiert in der Funktion `spinUp()` mittels:
 ```
