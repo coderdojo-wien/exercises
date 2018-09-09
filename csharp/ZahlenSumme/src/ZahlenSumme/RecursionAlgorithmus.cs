@@ -1,4 +1,4 @@
-namespace SumOfNumbers
+namespace ZahlenSumme
 {
     public class RecursionAlgorithmus : IAlgorithmus
     {
