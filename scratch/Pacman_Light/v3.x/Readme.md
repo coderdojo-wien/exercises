@@ -27,15 +27,13 @@ Du musst dir einen neuen Hintergrund erstellen in dem du auf das Knopf _Bühnenb
 
 ## Schritt 4 - Die Skripte
 
-Als erstes musst du eine Variable anlegen. Dies machst du indem du auf
-_Variablen_ klickst und anschließend eine _Neue Variable_ wählst.
+Damit das Spiel funktioniert müssen noch Skripte für alle Figuren eingefügt werden. Jede Figur hat seine eigenen Skript. Wenn man einen Skript bauen möchte kann man die Baussteine aus verschieden Kategorien verwenden. Ein Skript schreibt man in dem man auf die Figur klickt dann auf _Code_ und die Blöcke aus den einzelnen Kategorien verwendet.
+
+Als erstes musst du eine Variable ```Punkte``` anlegen. Dies machst du indem du auf
+_Variablen_ klickst und anschließend eine _Neue Variable_ wählst. Es ist egal in welcher Figur du die Variable anlegst da diese für alle Figure gültig ist.
 
 ![Variable erstellen](images/Variable_erstellen.jpg)
 ![Neue Variable](images/Neue_Variable.jpg)
-
-Damit das Spiel funktioniert müssen noch Skripte für alle Figuren eingefügt werden. Jede Figur hat seine eigenen Skript. Wenn man einen Skript bauen möchte kann man die Baussteine aus verschieden Kategorien verwenden. Ein Skript schreibt man in dem man auf die Figur klickt dann auf _Code_ und die Blöcke aus den einzelnen Kategorien verwendet.
-
-![Punkte Skript](images/Bloecke.jpg)
 
 Bei deinem _Pac-Man_ baust du dir folgendem Skript zusammen:
 
