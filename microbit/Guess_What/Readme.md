@@ -1,4 +1,4 @@
-# Coding in Python on micro:bit
+# Guess What
 
 ## What is micro:bit?
 
@@ -19,12 +19,11 @@ Each play will consist of showing a random image, and giving the player 3 second
 
 Conveniently enough, micro:bit offers an online Python editor. In order run it on the micro:bit device it has to be  downloaded (as an .hex file). Once the device is connected to a computer's USB port, that file could be copied to the device, and right after it will start.
 
-![micro:bit python](https://i.imgur.com/u8aHsz3.png)
+![micro:bit python](images/python_editor.png)
 
 ### Code
 
 The solution here will consist of less than 20 lines of code!
-
 
 First, we'll import the libraries we need:
 ```python
@@ -73,6 +72,3 @@ That's it! Converting it to a .hex file could be done [online](https://python.mi
 
 - Can you spot any bugs in the code? (Hint: what happens if both buttons are pressed)
 - How to improve the gameplay?
-
-
-
