@@ -28,7 +28,7 @@ erleichtert Dir später das Erstellen des Codes.
 
 Eine weitere Figur wird für die Mittellinie benötigt.
 
-![Rahmen anlegen](rahmen_anlegen.jpg)
+![Rahmen anlegen](images/rahmen_anlegen.jpg)
 
 Schritt 2 – Erstellen der beiden Spieler 
 ---------------------------------------
@@ -37,7 +37,7 @@ Für jeden der beiden Spieler benötigen wir eine Figur, die aus einem Rechteck 
 
 TIPP: Figuren kann man vervielfachen, indem man mit der rechten Maustaste draufklickt und dann "Duplizieren" auswählt.
 
-![Spieler anlegen](spieler_anlegen.jpg)
+![Spieler anlegen](images/spieler_anlegen.jpg)
 
 Schritt 3 – Erstelle der Spielstandanzeige 
 ------------------------------------------
