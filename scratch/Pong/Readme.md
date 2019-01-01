@@ -3,7 +3,11 @@ Pong
 
 Das Spiel Pong ist schon ein richtiger Dinosaurier unter den Computerspielen. Es wurde bereits 1972 erstmals gespielt!
 
-!(/coderdojo-wien/exercises/tree/exercise/pong/scratch/Pong/images/pong.jpg)
+!(images/pong.jpg)
+![altText](images/pong.jpg)
+![altText](/images/pong.jpg)
+![altText](/scratch/Pong/images/pong.jpg)
+![altText](/coderdojo-wien/exercises/blob/exercise/pong/scratch/Pong/images/pong.jpg)
 
 In diesem Spiel für zwei Personen geht es darum, einen Ball nicht passieren zu lassen, indem man ihn zum Gegner zurückspielt.
 Lässt ein Spieler den Ball passieren, bekommt der andere Spieler einen Punkt. Gewonnen hat, wer zuerst 5 Punkte erreicht.
