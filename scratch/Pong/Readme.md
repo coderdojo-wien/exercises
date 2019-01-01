@@ -92,7 +92,7 @@ die Punkte des linken Spielers und erstelle folgendes Programm.
 
 Für die Punkte des rechten Spielers wird folgendes Programm benötigt.
 
-![Coode punkte rechts](images/code_punkte_rechts.jpg)
+![Code punkte rechts](images/code_punkte_rechts.jpg)
 
 Jetzt ist unsere Spiel bereit gespielt zu werden - viel Spaß!
 
