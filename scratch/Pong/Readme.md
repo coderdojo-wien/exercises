@@ -103,6 +103,6 @@ Weitere Ideen:
 * Damit es etwas schwieriger für die Spieler wird, könntest du den Ball immer schneller werden oder die Spielfiguren immer kleiner werden lassen.
 * du könntest in das Spielfeld weitere Gegenstände stellen, an denen der Ball abprallt.
 
-Das Spiel zum Herunterladen gibt's [hier](pong.sb3).
+Das Spiel zum Herunterladen gibt's [hier](src/pong.sb3).
 
 Verwendete Scratch-Version: 3.0 beta
