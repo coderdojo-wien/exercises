@@ -10,7 +10,7 @@ Schritt 1 – Erstelle die Figuren
 Zuerst benötigen wir die Fledermaus und die Hindernisse, durch die die
 Fledermaus hindurch fliegen soll.
 
-![Übersicht](images/overview.png)
+![Übersicht](images/overview.PNG)
 
 Entferne die Katze mit einem klick auf X.
 
