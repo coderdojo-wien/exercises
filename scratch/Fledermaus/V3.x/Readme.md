@@ -71,5 +71,7 @@ Kannst du das Spiel noch weiter verbessern?
 
 Versuche einen Zähler einzubauen, der mitzählt, wie oft du einem Hindernis überwunden hast.
 Versuche neue Hindernisse zu finden.
-Verändere die zahlen um die Fledermaus sinkt und steigt.
+Verändere die Zahlen um die Fledermaus sinkt und steigt.
 Kannst du die Fledermaus auch mit der Tastatur steuern?
+Versuche das Spiel für 2 Spieler anzupassen.
+Versuche das Spiel nach jedem überwunden Hindernis schneller zu machen.
