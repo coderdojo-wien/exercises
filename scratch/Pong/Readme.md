@@ -96,13 +96,14 @@ Für die Punkte des rechten Spielers wird folgendes Programm benötigt.
 
 Jetzt ist unsere Spiel bereit gespielt zu werden - viel Spaß!
 
-Weitere Ideen:
+Weitere Ideen
 --------------
 
+* Die Spieler dürfen das Feld nicht verlassen und müssen von Rand abprallen
 * Bei Spielende könnte man den Gewinner verkünden oder ein "Game over" anzeigen.
 * Damit es etwas schwieriger für die Spieler wird, könntest du den Ball immer schneller werden oder die Spielfiguren immer kleiner werden lassen.
-* du könntest in das Spielfeld weitere Gegenstände stellen, an denen der Ball abprallt.
+* Du könntest in das Spielfeld weitere Gegenstände stellen, an denen der Ball abprallt.
 
 Das Spiel zum Herunterladen gibt's [hier](src/pong.sb3).
 
-Verwendete Scratch-Version: 3.0 beta
+Verwendete Scratch-Version: 3.0
