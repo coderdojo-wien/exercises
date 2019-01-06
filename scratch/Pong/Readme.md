@@ -12,11 +12,11 @@ Gesteuert wird der Spieler auf der linken Seite mit den Tasten "w" und "s", der 
 Schritt 1 – Erstelle den Ball, den Rand und die Mittellinie 
 -----------------------------------------------------------
 
-Zuerst entferne die nicht benötigte Figur "Figur1" (Scratchy), indem Du auf das kleine Kreuz bei der Figur klickst.
+Zuerst entferne die nicht benötigte Figur "Figur1" (Scratchy), indem du auf das kleine Kreuz bei der Figur klickst.
 
 ![Figur entfernen](images/figur1_entfernen.jpg)
 
-Jetzt kannst Du einen Ball als Figur hinzufügen. 
+Jetzt kannst du einen Ball als Figur hinzufügen. 
 
 ![Ball anlegen](images/ball_anlegen.jpg)
 
@@ -69,7 +69,7 @@ Schritt 5 – Dem Ball sein Verhalten beibringen
 Unser Spielball benötigt zwei Variablen ("Richtung" und "neue Richtung"), die du anlegst, indem du in der Kategorie "Variablen" auf den Knopf 
 "Neue Variable" klickst. In dem Dialogfenster gibts du den Namen der Variable ein und wählst "Nur für diese Figur aus".
 
-Nimm das Häckchen vor der Variable weg, wenn Du nicht möchtest, dass die Variable im Spielfeld angezeigt wird.
+Nimm das Häckchen vor der Variable weg, wenn du nicht möchtest, dass die Variable im Spielfeld angezeigt wird.
 
 ![Variable vom ball](images/variablen_vom_ball.jpg)
 
@@ -100,8 +100,9 @@ Weitere Ideen:
 --------------
 
 * Bei Spielende könnte man den Gewinner verkünden oder ein "Game over" anzeigen.
-* Damit es etwas schwieriger für die Spieler wird, könntest Du den Ball immer schneller werden oder die Spielfiguren immer kleiner werden lassen.
-* Du könntest in das Spielfeld weitere Gegenstände stellen, an denen der Ball abprallt.
+* Damit es etwas schwieriger für die Spieler wird, könntest du den Ball immer schneller werden oder die Spielfiguren immer kleiner werden lassen.
+* du könntest in das Spielfeld weitere Gegenstände stellen, an denen der Ball abprallt.
+
+Das Spiel zum Herunterladen gibt's [hier](src/pong.sb3).
 
 Verwendete Scratch-Version: 3.0 beta
-Das Spiel zum Herunterladen gibt's [hier](src/pong.sb3).
