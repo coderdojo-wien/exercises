@@ -55,7 +55,7 @@ Schritt 4 – Die beiden Spielfiguren steuerbar machen
 Damit sich die linke Spielfigur mit den Tasten "w" und "s" bewegen lässt, klick die linke Spielfigur an und füge im Reiter/Tab "Code" 
 folgendes Programm ein.
 
-![Code linker spieler](code_linker_spieler.jpg)
+![Code linker spieler](images/code_linker_spieler.jpg)
 
 Für die rechte Spielfigur füge folgendes Programm ein.
 
