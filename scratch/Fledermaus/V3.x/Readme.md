@@ -42,6 +42,8 @@ Du kannst noch ein paar Hindernisse einfügen in dem du mit der rechten Maustast
 Platziere das Hindernis nun in die allgemeine Arbeitsfläche rechts neben der
 Fledermaus.
 
+Nun müssen wir noch eine weitere neue Figur zeichenen, eine Linie, welche wir ganz am linken Rand des Bildschirms zeichnen. Benenne diese Figur auch gleich um in Linie.
+![Linie](images/linie.jpg)
 
 
 Schritt 2 – Erstelle das Skript
