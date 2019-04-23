@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "moduleResolution": "node"
+  }
+}
