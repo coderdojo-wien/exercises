@@ -5,6 +5,8 @@ Dieser Bot wurde mit [Microsoft Botbuilder SDK v4](https://github.com/Microsoft/
 
 ## Los geht's!
 
+Hinweis: Diese Anleitung ist nicht mehr aktuell!
+
 Folgende Schritte sind notwendig um den Bot zu entwickeln:
 
 ### 1) Notwendige Installationen
