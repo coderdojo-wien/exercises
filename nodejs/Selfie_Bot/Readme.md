@@ -37,11 +37,11 @@ private cognitiveServicesKey = "<ADD FACY API KEY HERE>"
 
 Starte den Bot, indem du in Visual Studio Code auf _F5_ klickst. In der Debug Console solltest du nun folgende Zeilen sehen:
 
-![](images/browser.png)
+![](images/browser2.png)
 
 ### 4) Bot im Emulator testen
 Starte Bot Framework Emulator, klicke auf _File_ > _Open Bot_ und wähle die Datei [botconnect.bot](src/src/botconnect.bot) aus, clicke dann auf "Connect"
 
 Du solltest nun mit dem Bot kommunizieren können. Tippe eine Nachricht oder sende ein Selfie!
 
-![](images/emulator.png)
+![](images/emulator2.png)
