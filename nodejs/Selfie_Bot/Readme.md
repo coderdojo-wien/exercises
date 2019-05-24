@@ -5,19 +5,15 @@ Dieser Bot wurde mit [Microsoft Botbuilder SDK v4](https://github.com/Microsoft/
 
 ## Los geht's!
 
-Hinweis: Diese Anleitung ist nicht mehr aktuell!
-
 Folgende Schritte sind notwendig um den Bot zu entwickeln:
 
 ### 1) Notwendige Installationen
-Installiere die letzte Version von Visual Studio kostenlos von [hier](https://www.visualstudio.com/en/downloads). Als Workload sollten auf jeden Fall Node.js-Entwicklung und am besten auch ASP.NET-Entwicklung ausgewählt sein:
+Installiere die letzte Version von **Visual Studio Code** kostenlos von [hier](https://code.visualstudio.com/).
 
-![](https://github.com/christian-vorhemus/DashboardTemplate/blob/master/images/setup.png)
-
-Lade außerdem den [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases) für dein System sowie <a href="https://nodejs.org/en/download/">Node.js</a> herunter.
+Lade außerdem den [Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases/) für dein System sowie <a href="https://nodejs.org/en/download/">Node.js</a> herunter.
 
 ### 2) Keys abrufen
-Wir verwenden Microsoft Cognitive Services um das Bild zu analysieren und benötigen dafür einen API-Schlüssel. Dazu wechseln wir auf [diese Seite](https://azure.microsoft.com/de-de/try/cognitive-services/?api=face-api) und wählen _API-Schlüssel abrufen_ aus.
+Wir verwenden Microsoft Cognitive Services um das Bild zu analysieren und benötigen dafür einen API-Schlüssel. Dazu wechseln wir auf [diese Seite](https://azure.microsoft.com/de-de/try/cognitive-services/?api=face-api) und wählen _API-Schlüssel abrufen_ aus. Es ist eine Azure Account notwendig um einen "Face" recognition key beziehen zu können. Wenn du einen anlegst, stelle sicher, dass als _Location_ **West Central US** ausgwählt ist.
 
 ![](images/face-api.png)
 
@@ -26,25 +22,26 @@ Ein Microsoft oder Facebook-Konto ist notwendig um den Schlüssel generieren zu 
 ![](images/api-key.png)
 
 ### 3) Projekt laden und starten
-Lade dieses Projekt herunter und wechsle in den Ordner [nodejs/Selfie-Bot](src) in einer Konsole/Terminal. Tippe
+Lade dieses Projekt herunter, öffne eine Konsole/Terminal und wechsle dort in den [/src](src) Ordner in dem sich die _package.json_ Date befindet. Tippe
 
 ```
 npm install
 ```
 
-um die fehlenden Pakete zu installieren. Wenn du die Mitteilung bekommst, dass der Befehl "npm" nicht gefunden werden kann, überprüfe ob du Node.js installiert hast. Als nächstes doppelklicke auf [Selfie-Bot.sln](src/Selfie-bot.sln) um das Projekt in Visual Studio zu öffnen. Wähle in Visual Studio im "Solution Explorer" (rechtes Menü) die Datei [app.js](src/Selfie-Bot/app.js) aus, dies sollte wie folgt aussehen und ersetze den Platzhaltertext für ```const apiKey``` mit dem Schlüssel aus Schritt 2.
+um die fehlenden Pakete zu installieren. Wenn du die Mitteilung bekommst, dass der Befehl "npm" nicht gefunden werden kann, überprüfe ob du Node.js installiert hast. 
+Als nächstes öffne Visual Studio Code und wähle unter _Datei_ > _Öffne Ordner_ den gerade heruntergeladenen Ordner aus. Öffne in Visual Studio Code die Datei [selfiebot.ts](src/selfiebot.ts) aus und ersetze den Platzhaltertext für ```private cognitiveServicesKey``` mit dem Schlüssel aus Schritt 2.
 
 ```typescript
-const apiKey = "<ADD FACY API KEY HERE>"
+private cognitiveServicesKey = "<ADD FACY API KEY HERE>"
 ```
 
-Starte den Bot, indem du in Visual Studio auf _F5_ klickst. Es öffnet sich eine Website und die Konsole. Kopiere die Adresse, die im Browser aufscheint:
+Starte den Bot, indem du in Visual Studio Code auf _F5_ klickst. In der Debug Console solltest du nun folgende Zeilen sehen:
 
 ![](images/browser.png)
 
 ### 4) Bot im Emulator testen
-Starte Bot Emulator, wähle die Adresse, die du soeben kopierst hast, füge _/api/messages_ hinzu, und klicke auf _Connect_.
+Starte Bot Framework Emulator, klicke auf _File_ > _Open Bot_ und wähle die Datei [botconnect.bot](src/botconnect.bot) aus, clicke dann auf "Connect"
+
+Du solltest nun mit dem Bot kommunizieren können. Tippe eine Nachricht oder sende ein Selfie!
 
 ![](images/emulator.png)
-
-Du solltest nun mit dem Bot kommunizieren können.
