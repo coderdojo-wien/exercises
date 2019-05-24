@@ -29,7 +29,7 @@ npm install
 ```
 
 um die fehlenden Pakete zu installieren. Wenn du die Mitteilung bekommst, dass der Befehl "npm" nicht gefunden werden kann, überprüfe ob du Node.js installiert hast. 
-Als nächstes öffne Visual Studio Code und wähle unter _Datei_ > _Öffne Ordner_ den gerade heruntergeladenen Ordner aus. Öffne in Visual Studio Code die Datei [selfiebot.ts](src/selfiebot.ts) aus und ersetze den Platzhaltertext für ```private cognitiveServicesKey``` mit dem Schlüssel aus Schritt 2.
+Als nächstes öffne Visual Studio Code und wähle unter _Datei_ > _Öffne Ordner_ den gerade heruntergeladenen Ordner aus. Öffne in Visual Studio Code die Datei [selfiebot.ts](src/src/selfiebot.ts) aus und ersetze den Platzhaltertext für ```private cognitiveServicesKey``` mit dem Schlüssel aus Schritt 2.
 
 ```typescript
 private cognitiveServicesKey = "<ADD FACY API KEY HERE>"
@@ -40,7 +40,7 @@ Starte den Bot, indem du in Visual Studio Code auf _F5_ klickst. In der Debug Co
 ![](images/browser.png)
 
 ### 4) Bot im Emulator testen
-Starte Bot Framework Emulator, klicke auf _File_ > _Open Bot_ und wähle die Datei [botconnect.bot](src/botconnect.bot) aus, clicke dann auf "Connect"
+Starte Bot Framework Emulator, klicke auf _File_ > _Open Bot_ und wähle die Datei [botconnect.bot](src/src/botconnect.bot) aus, clicke dann auf "Connect"
 
 Du solltest nun mit dem Bot kommunizieren können. Tippe eine Nachricht oder sende ein Selfie!
 
