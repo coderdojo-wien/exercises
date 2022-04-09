@@ -14,7 +14,7 @@
     "restify": "^8.2.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.14",
-    "@types/restify": "7.2.9"
+    "@types/node": "^8.10.66",
+    "@types/restify": "^8.5.4"
   }
 }
