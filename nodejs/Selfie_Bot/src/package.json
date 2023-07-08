@@ -7,8 +7,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "botbuilder": "^4.3.4",
-    "botbuilder-dialogs": "^4.3.4",
+    "botbuilder": "^4.20.0",
+    "botbuilder-dialogs": "^4.20.0",
     "botframework-config": "^4.3.4",
     "dotenv": "^7.0.0",
     "restify": "^8.2.0"
